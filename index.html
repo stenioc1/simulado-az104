@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulado AZ-104</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hide { display: none; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <div class="max-w-3xl mx-auto py-10 px-4">
+    <h1 class="text-3xl font-bold mb-6">Simulado AZ-104</h1>
+
+    <div class="mb-4">
+      <span class="text-sm text-gray-600">Tempo restante:</span>
+      <span id="timer" class="font-mono text-lg">30:00</span>
+    </div>
+
+    <div id="quiz-container" class="space-y-6"></div>
+
+    <div class="flex justify-between mt-6">
+      <button id="prev-btn" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Anterior</button>
+      <button id="next-btn" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Próxima</button>
+      <button id="submit-btn" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Finalizar</button>
+    </div>
+
+    <div id="results" class="mt-8 hidden">
+      <h2 class="text-2xl font-semibold mb-4">Resultado</h2>
+      <p id="score" class="mb-4"></p>
+      <div id="explanations" class="space-y-4"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
